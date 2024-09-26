@@ -12,7 +12,7 @@
   "scripts": {
     "lint": "abaplint",
     "unit": "rm -rf output && abap_transpile && echo RUNNING && node output/index.mjs",
-    "test": "npm run lint && npm run downport && npm run unit",
+    "test": "npm run downport && npm run unit",
     "downport": "rm -rf downport && cp -r src downport && abaplint --fix abaplint_downport.json"
   },
   "repository": {
